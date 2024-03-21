@@ -4,7 +4,7 @@
 #Ignore punctuation and assume sen will not be empty. Words may also contain numbers, for example "Hello world123
 # Once your function is working, take the final output string and combine it with your ChallengeToken, 
 #both in reverse order and separated by a colon.
-# Your ChallengeToken: j894gbvad3
+# Your ChallengeToken: j894gb
 # ?
 # Examples
 # Input: "fun&!! time"
@@ -28,7 +28,7 @@ def StringChallenge(sen):
 StringChallenge("I love dogs")
 StringChallenge("fun&!! time")
 
-challenge_token = "j894gbvad3"
+challenge_token = "j894gbv"
 # output = StringChallenge("I love dogs")
 output=StringChallenge("fun&!! time")
 final_output = f"{output[::-1]}:{challenge_token[::-1]}"
@@ -51,7 +51,7 @@ print("Final Output", final_output)
 # print(StringChallenge("fun&!! time"))
 # print(StringChallenge("I love dogs"))
 
-# challenge_token = "j894gbvad3"
+# challenge_token = "j894gb"
 # output = StringChallenge("fun&!! time")
 # final_output = f"{output[::-1]}:{challenge_token[::-1]}"
 # print("Final Output:", final_output)
