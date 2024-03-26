@@ -34,3 +34,8 @@ stages:
         repository: 'manihere12/test'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
+
+    - task: DownloadPipelineArtifact@2
+      inputs:
+        buildType: 'current'
+        targetPath: '$(Pipeline.Workspace)'
