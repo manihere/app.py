@@ -28,4 +28,9 @@ stages:
         tags: |
           $(tag)
 
-
+    - task: Docker@2
+      inputs:
+        containerRegistry: 'Docker Hub'
+        repository: 'manihere12/test'
+        command: 'buildAndPush'
+        Dockerfile: '**/Dockerfile'
