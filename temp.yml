@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - nginx_config:/etc/nginx/conf.d #mapping /etc/nginx/conf.d as mount point of nginx_config
+volumes:
+  nginx_config:
