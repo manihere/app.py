@@ -39,3 +39,11 @@ stages:
       inputs:
         buildType: 'current'
         targetPath: '$(Pipeline.Workspace)'
+
+    - task: SonarCloudPrepare@1
+      inputs:
+        SonarCloud: 'SonarCubeServiceConnection'
+        organization: 'codeanalysisdevops'
+        scannerMode: 'MSBuild'
+        projectKey: 'codeanalysisDevOps'
+        projectName: 'mvcapp5'
